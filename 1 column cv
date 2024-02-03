@@ -1,0 +1,337 @@
+%-------------------------
+% Resume in 
+% Author : Abey George https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape Keshav Kumar} \\ \vspace{10pt}
+    % city,state \\ \vspace{1pt}
+    \small \href{phone:7857982609}{ \raisebox{-0.1\height}\faPhone\ \underline{7857982609} ~} \href{mailto:keshavkumar8122@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{keshavkumar8122@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/keshavkumar3/}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{keshavop}}  ~
+    \href{https://github.com/Keshavop}{\raisebox{-0.2\height}\faGithub\ \underline{keshavop}} ~
+    \href{https://keshavop.vercel.app}{\raisebox{-0.2\height}\faUser\ \underline{Portfolio}} ~
+    % \href{https://www.hackerrank.com/yourid}{\raisebox{-0.2\height}\faHackerrank\ \underline{yourid}} ~
+    % \href{https://codeforces.com/profile/yourid}{\raisebox{-0.2\height}\faPoll\ \underline{yourid}}
+    \vspace{-4pt}
+\end{center}
+
+%-----------EDUCATION-----------
+
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Lovely Professional University, Punjab}{2020 -- 2024}
+      {Bachelor of Technology - Computer Science and Engineering  \textbf{} \textbf{}}{CGPA:8.32}
+  \resumeSubHeadingListEnd
+  
+  %   \resumeSubHeadingListStart
+  %   \resumeSubheading
+  %     {Hope Hall Foundation School, New Delhi}{2018 -- 2020}
+  %     {Class 12th - Central Board of Secondary Education (CBSE)  \textbf{} \textbf{}}{Grade:67.4\%}
+  % \resumeSubHeadingListEnd
+  
+  %   \resumeSubHeadingListStart
+  %   \resumeSubheading
+  %     {DAV Public School, Bihar}{2018}
+  %     {Class 10th - Central Board of Secondary Education (CBSE)  \textbf{} \textbf{}}{Grade:82.4\%}
+  % \resumeSubHeadingListEnd
+  
+
+% %------RELEVANT COURSEWORK-------
+% \section{COURSEWORK / SKILLS}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-2pt, parsep=5pt]
+%                 \item Data Structures \& Algorithms
+%                 \item Operating Systems
+%                 \item Network Security
+%                 \item Database Management System (DBMS)
+%                 \item Artificial Intelligence
+%                 \item OOPS Concept
+%                 \item Web Development
+%                 \item Android Development
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+
+\vspace{-3pt}
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Languages:}}{ \normalsize{C, C++, JAVA, Python, JavaScript}} \\
+     \textbf{\normalsize{Front-end Web Technologies:}}{ \normalsize{HTML, CSS, JavaScript, ReactJS, Redux, Redux Toolkit, Tailwind CSS}} \\
+     \textbf{\normalsize{Back-end Web Technologies:}}{ \normalsize{NodeJS, ExpressJS, MongoDB, JWT}} \\
+     \textbf{\normalsize{Tools:}}{\normalsize{ Git, GitHub, VScode, Linux }} \\
+     \textbf{\normalsize{Coursework:}}{\normalsize{ DBMS, Operating System, Computer Network, SQL, NoSQL }} \\
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+ 
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-1pt}
+    \resumeSubHeadingListStart
+
+    
+       % \resumeProjectHeading
+       %    {\href{}{\textbf{\large{\underline{Netflix Clone}}} \href{https://netflixclonekk.netlify.app/}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{\textbf{HTML,CSS,API,React,Firebase}}}}{May 2022}
+       %    \resumeItemListStart
+       %      \resumeItem{\normalsize{This is a simplified Front-end Clone of Netflix}}
+       %      \resumeItem{\normalsize{It uses the \textbf{TMDB movieDB API} to fetch movies, search for movies, and display a list of movies}}
+       %      \resumeItem{\normalsize{Supports \textbf{authentication} by allowing only logged-in users to play and watch movies/Web series.}}
+       %      \resumeItem{\normalsize{\textbf{Responsive} web site means adapts any screen size.}}
+       %      \resumeItem{\normalsize{Automatic data updates when movies and shows are added.}}
+       %      \resumeItem{\textcolor{accent} {\href{https://github.com/keshavop/Netflix-clone} {\underline{\normalsize{Github Link}}}}}\\
+       %    \resumeItemListEnd
+       %    \vspace{-13pt}
+       %    \resumeItemListEnd 
+
+        \resumeProjectHeading
+          {\href{}{\textbf{\large{\underline{CodeSync-IDE}}} \href{https://codesyncide.vercel.app}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{\textbf{React,Node.js, Express.js, Socket.IO, Tailwind CSS}}}}{August 2023}
+          \resumeItemListStart
+            \resumeItem{\normalsize{This is a simplified Front-end Clone of Netflix}}
+            \resumeItem{\normalsize{It uses the \textbf{TMDB movieDB API} to fetch movies, search for movies, and display a list of movies}}
+            \resumeItem{\normalsize{Supports \textbf{authentication} by allowing only logged-in users to play and watch movies/Web series.}}
+            \resumeItem{\normalsize{\textbf{Responsive} web site means adapts any screen size.}}
+            \resumeItem{\normalsize{Automatic data updates when movies and shows are added.}} \\
+            \vspace{1.5pt}
+            \begin{tabular}{ll}
+                \resumeItem{\textcolor{accent}{\href{}{\underline{\normalsize{Live Link}}}}} &
+                \resumeItem{\textcolor{accent}{\href{}{\underline{\normalsize{Github Link}}}}}
+            \end{tabular}            
+          \resumeItemListEnd
+          \vspace{-13pt}
+          \resumeItemListEnd 
+
+          \resumeProjectHeading
+          {\href{}{\textbf{\large{\underline{Streamy Youtube Clone}}} \href{}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{\textbf{React,Redux, Tailwind CSS, Youtube API}}}}{August 2023}
+          \resumeItemListStart
+            \resumeItem{\normalsize{This is a simplified Front-end Clone of Netflix}}
+            \resumeItem{\normalsize{It uses the \textbf{TMDB movieDB API} to fetch movies, search for movies, and display a list of movies}}
+            \resumeItem{\normalsize{Supports \textbf{authentication} by allowing only logged-in users to play and watch movies/Web series.}}
+            \resumeItem{\normalsize{\textbf{Responsive} web site means adapts any screen size.}}
+            \resumeItem{\normalsize{Automatic data updates when movies and shows are added.}} \\
+            \vspace{1.5pt}
+            \begin{tabular}{ll}
+                \resumeItem{\textcolor{accent}{\href{}{\underline{\normalsize{Live Link}}}}} &
+                \resumeItem{\textcolor{accent}{\href{}{\underline{\normalsize{Github Link}}}}}
+            \end{tabular}            
+          \resumeItemListEnd
+          \vspace{-13pt}
+          \resumeItemListEnd 
+
+          %      \resumeProjectHeading
+          % {\href{}{\textbf{\large{\underline{Expense Tracker}}} \href{}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{\textbf{HTML,CSS,API,React,Firebase}}}}{May 2022}
+          % \resumeItemListStart
+          %   \resumeItem{\normalsize{This is a simplified Front-end Clone of Netflix}}
+          %   \resumeItem{\normalsize{It uses the \textbf{TMDB movieDB API} to fetch movies, search for movies, and display a list of movies}}
+          %   \resumeItem{\normalsize{Supports \textbf{authentication} by allowing only logged-in users to play and watch movies/Web series.}}
+          %   \resumeItem{\normalsize{\textbf{Responsive} web site means adapts any screen size.}}
+          %   \resumeItem{\normalsize{Automatic data updates when movies and shows are added.}}
+          %   \resumeItem{\textcolor{accent} {\href{https://github.com/keshavop/Netflix-clone} {\underline{\normalsize{Github Link}}}}}\\
+          % \resumeItemListEnd
+          % \vspace{-13pt}
+          % \resumeItemListEnd 
+          
+    \resumeSubHeadingListEnd
+\vspace{8pt}
+
+%
+
+
+%-----------ACHIEVEMENTS---------------
+\section{ACHIEVEMENTS}
+
+
+$\sbullet[.75] \hspace{0.2cm}${\textbf{Rated 1500+ (2 Star), solved 100+ Problems at Codechef}} {\href{https://www.codechef.com/users/keshavop}{\raisebox{-0.1\height}\faExternalLink }} \hspace{1cm}\\
+
+$\sbullet[.75] \hspace{0.2cm}${\textbf{Rated 1430 Rating at Leetcode and solved 200+ problems on Leetcode}}{\href{https://leetcode.com/keshavop/}{\raisebox{-0.1\height}\faExternalLink }}  \hspace{1cm}\\
+
+$\sbullet[.75] \hspace{0.2cm}${\textbf{Solved 300+ problems on GFG}}{\href{https://auth.geeksforgeeks.org/user/keshavop/practice}{\raisebox{-0.1\height}\faExternalLink }}  \hspace{1cm}\\
+
+$\sbullet[.75] \hspace{0.2cm}${\textbf{Contributed to Hacktoberfest in 2021 and 2022}}{\href{https://drive.google.com/file/d/11qa8d9tDFXLJiDeccjvG6gAMsaZidgY7/view?usp=sharing}{\raisebox{-0.1\height}\faExternalLink }}\\
+
+$\sbullet[.75] \hspace{0.2cm}${\textbf{Participate in Google Cloud Facilitator Program && Google Cloud Ready Program}}{\href{https://www.cloudskillsboost.google/public_profiles/792a8b6a-c5e8-4b7f-a4b4-6245803d471c}{\raisebox{-0.1\height}\faExternalLink }} \hspace{1cm}\\
+
+
+% %-----------INVOLVEMENT---------------
+% \section{EXTRACURRICULAR}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{Organization Name \href{Certificate Proof link}{\raisebox{-0.1\height}\faExternalLink } }{MM YYYY -- MM YYYY}{\underline{Role}}{Location}
+%             \resumeItemListStart
+%                 \resumeItem{\normalsize{About the role \textbf{and responsibilities carried out.}}}
+%                 \resumeItem{\normalsize{Participation Certificate. \href{ParticipationCertificateLink.com}{\raisebox{-0.1\height}\faExternalLink }}}
+%             \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+%  \vspace{-11pt}
+ \vspace{2pt}
+ %-----------CERTIFICATIONS---------------
+\section{CERTIFICATIONS}
+
+$\sbullet[.75] \hspace{0.1cm}$ {\textbf{META Front-end Professional Certification}}{\href{https://coursera.org/share/0a950a3994e4aa550d83de3a782688bc}{\raisebox{-0.1\height}\faExternalLink }}\hspace{1.6cm}
+
+$\sbullet[.75] \hspace{0.1cm}$ {\textbf{META Back-end  Professional Certification}}{\href{https://coursera.org/share/f0c890d8a5227e31c6542d93b11cdc7b}{\raisebox{-0.1\height}\faExternalLink }}\hspace{1.6cm}
+
+$\sbullet[.75] \hspace{0.1cm}$ {\textbf{Server side JavaScript with Node.js by NIIT University Coursera}}{\href{https://coursera.org/share/96ca45ce071f58aa4d48d638a4de519a}{\raisebox{-0.1\height}\faExternalLink }}\hspace{1.6cm}
+
+$\sbullet[.75] \hspace{0.1cm}$ {\textbf{Database Management System by Infosys Springboard}}{\href{https://drive.google.com/file/d/157A4t4jEd70He6MUfn_pGqL71G5tFLHH/view?usp=sharing}{\raisebox{-0.1\height}\faExternalLink }}\hspace{1.6cm}
+
+$\sbullet[.75] \hspace{0.1cm}$ {\textbf{DSA Self Placed by GFG}}{\href{https://drive.google.com/file/d/1tUcDkbx12nVkwR38cpsBqsf_m8_BCjLr/view?usp=sharing}{\raisebox{-0.1\height}\faExternalLink }}\hspace{1.6cm}
+
+
+\section{VOLUNTEERING}
+
+$\sbullet[.75] \hspace{0.1cm}$ {\textbf{Social Media Manager at Magnesia Student Organisation}}
+\begin{itemize}
+\item {I handle the Instagram, LinkedIn pages and promote our projects and make our events successful.}\\
+\end{itemize}
+
+
+ 
+\end{document}
