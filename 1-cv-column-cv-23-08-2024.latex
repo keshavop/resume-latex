@@ -1,0 +1,264 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape Keshav Kumar} \\ \vspace{10pt}
+    % city,state \\ \vspace{1pt}
+    \small \href{phone:7857982609}{ \raisebox{-0.1\height}\faPhone\ \underline{+91 7857982609} ~} \href{mailto:keshavkumar8122@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{keshavkumar8122@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/keshavop/}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{keshavop}}  ~
+    \href{https://github.com/Keshavop}{\raisebox{-0.2\height}\faGithub\ \underline{keshavop}} ~
+    \href{https://keshavop.in}{\raisebox{-0.2\height}\faUser\ \underline{Portfolio}} ~
+    \vspace{-4pt}
+\end{center}
+
+%-----------EDUCATION-----------
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Lovely Professional University, Punjab}{2020 -- May 2024}
+      {Bachelor of Technology - Computer Science and Engineering  \textbf{} \textbf{}}{CGPA:8.49}
+  \resumeSubHeadingListEnd
+
+\vspace{-3pt}
+
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Jupiter Money, Amica Financial Technologies Private Limited}{November 2023 - Present}
+      {SDE Backend Intern}{}
+      \resumeItemListStart
+        \item{
+        \textbf{Tech Stack}: \textbf{Java}, \textbf{Kotlin}, \textbf{Spring} \textbf{Boot}, \textbf{Kafka}, \textbf{PostgreSQL} \\
+        }
+        \resumeItem{Contributed to the development of \textbf{Loan against Mutual Funds} (\textbf{LAMF}) project, gaining valuable experience in lending and mutual funds.}
+        % \resumeItem{Improved the user experience on the investment homepage by reducing latency to \textbf{under 200ms}, consolidating 15 API calls into a single API call with proper error handling.}
+        \resumeItem{Worked on the development of \textbf{Gold V2 API} with \textbf{MMTC} as a partner, reduce latency and enhanced user experience in the Gold product.}
+        \resumeItem{Implemented key metrics and made \textbf{Grafana} dashboards for monitoring investment services, and enabled \textbf{Prometheus} based alerting system for proactive issue identification, enhancing service reliability.}
+        \resumeItem{Created \textbf{OneView} internal dashboard for \textbf{Magic Spends} and \textbf{LAMF} to streamline handling of customer support tickets, significantly boosting overall team efficiency by 30\%.}
+      \resumeItemListEnd 
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading 
+        {\textbf{{CodeSync IDE}} $|$ \href{https://codesyncide.vercel.app}{Live $ $}{\faExternalLink} $|$ $ $\href{https://github.com/keshavop/CodeSync-IDE}{GitHub $ $}{\faExternalLink} $|$ \emph{ReactJS, NodeJS, ExpressJS, Socket.IO}}
+        {September 2023}
+        \resumeItemListStart
+        \vspace{1pt}
+          \resumeItem{Developed a collaborative IDE using React, Node.js, Rapid API,  and Socket.IO for seamless  real-time communication.}
+          \vspace{1pt}
+          \resumeItem{Implemented a \textbf{live chat feature} using Socket.IO, enabling users to discuss code, share insights, and brainstorm ideas within the platform. }
+          \vspace{1pt}
+          \resumeItem{Implemented \textbf{Codemirror} to create modern UI like IDE, integrated \textbf{Rapid API} to compile and execute code in popular languages, including C, C++, JAVA, JavaScript, etc. }
+          \vspace{1pt}
+        \resumeItemListEnd
+        \vspace{-16pt}
+    
+    \resumeProjectHeading
+        {\textbf{{Employee Navigator}} $|$ \href{https://github.com/keshavop/Employee-ops-management-system}{Live $ $}{\faExternalLink} $|$ $ $\href{https://github.com/keshavop/Employee-ops-management-system}{GitHub $ $}{\faExternalLink} $|$ \emph{Java, Spring Boot, MySQL}}
+        {May 2024}
+        \resumeItemListStart
+        \vspace{1pt}
+          \resumeItem{Implemented \textbf{RESTful APIs} for employee CRUD operations and used MySQL database Hibernate ORM, enabling efficient data persistence and retrieval.}
+          \vspace{1pt}
+          \resumeItem{Designed and developed user authentication and authorization using \textbf{JWT authentication token}, ensuring secure access to the system.}
+          \vspace{1pt}
+          \resumeItem{Enhanced application logging and monitoring using \textbf{Spring Boot Actuator} and configured deployment using Docker.}
+          \vspace{1pt}
+        \resumeItemListEnd
+        \vspace{-16pt}
+        \resumeItemListEnd\textit{}
+\vspace{-3pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, JAVA, Kotlin, JavaScript, TypeScript, SQL} \\
+     \vspace{2pt}
+     \textbf{Frameworks \& Database}{: ReactJS, NodeJS, NextJS, TailwindCSS, Spring Boot, Kafka, Redis, PostgreSQL, MongoDB} \\
+     \vspace{2pt}
+     \textbf{Developer Tools}{: AWS, GCP, Docker, Git, GitHub, Linux, Postman, Figma} \\
+     \vspace{2pt}
+     \textbf{Interpersonal Skills}{:Teamwork, Problem-Solving, Adaptability, Decision-Making} \\
+    }}
+ \end{itemize}
+ \vspace{-14pt}
+
+ %-----------CERTIFICATIONS---------------
+\section{Certifications}
+
+$\sbullet[.75] \hspace{0.1cm}$ 
+{{META Front-end Professional Certification}} {\href{https://coursera.org/share/0a950a3994e4aa550d83de3a782688bc}{\raisebox{-0.1\height}\faExternalLink }}
+\hspace{2cm}\\
+
+$\sbullet[.75] \hspace{0.1cm}$ 
+{{META Back-end  Professional Certification}} {\href{https://coursera.org/share/f0c890d8a5227e31c6542d93b11cdc7b}{\raisebox{-0.1\height}\faExternalLink }}
+\hspace{2cm}\\
+
+$\sbullet[.75] \hspace{0.1cm}$ 
+{{Server side JavaScript with Node.js by NIIT University Coursera}} 
+{\href{https://coursera.org/share/96ca45ce071f58aa4d48d638a4de519a}{\raisebox{-0.1\height}\faExternalLink }}
+\hspace{8cm}\\
+
+$\sbullet[.75] \hspace{0.1cm}$ 
+{{Database Management System by Infosys Springboard}} {\href{https://drive.google.com/file/d/157A4t4jEd70He6MUfn_pGqL71G5tFLHH/view?usp=sharing}{\raisebox{-0.1\height}\faExternalLink }}
+\hspace{2cm}\\
+
+$\sbullet[.75] \hspace{0.1cm}$ 
+{{DSA Self Placed by GFG}} {\href{https://drive.google.com/file/d/1tUcDkbx12nVkwR38cpsBqsf_m8_BCjLr/view?usp=sharing}{\raisebox{-0.1\height}\faExternalLink }}
+\hspace{6cm}\\
+
+%-----------ACHIEVEMENTS---------------
+\section{Achievements}
+
+$\sbullet[.75] \hspace{0.2cm}${{Rated 1430 Rating at Leetcode and solved 500+ problems on Leetcode \& Codestudio}} {\href{https://leetcode.com/keshavop/}{\raisebox{-0.1\height}\faExternalLink }}  
+\hspace{2cm}\\
+
+$\sbullet[.75] \hspace{0.2cm}${{Contributed to \textit{Hacktoberfest} in 2021, 2022 and 2023}} {\href{https://drive.google.com/file/d/11qa8d9tDFXLJiDeccjvG6gAMsaZidgY7/view?usp=sharing}{\raisebox{-0.1\height}\faExternalLink }}
+\hspace{2cm}\\
+
+$\sbullet[.75] \hspace{0.2cm}${{Participated in \textit{Google Cloud Facilitator Program} \& \textit{Google Cloud Ready Program} \& earned badges}} {\href{https://www.cloudskillsboost.google/public_profiles/792a8b6a-c5e8-4b7f-a4b4-6245803d471c}{\raisebox{-0.1\height}\faExternalLink }}
+\hspace{2cm}\\
+
+$\sbullet[.75] \hspace{0.2cm}${{Selected as Top 5\% in Web Development Space as a valuable contributor to LinkedIn Blog Space}}
+\hspace{2cm}\\
+
+ \vspace{2pt}
+
+ %----------Coding Profiles--------------
+\section{Coding Profile}
+\begin{center}
+    \href{https://leetcode.com/u/keshavop/}{\underline{Leetcode}} \quad
+    \href{https://www.geeksforgeeks.org/user/keshavop/}{\underline{GFG Practice Platform}} \quad
+    \href{https://www.codingninjas.com/codestudio/profile/keshavop}{\underline{Codestudio}} \quad
+    \href{https://github.com/keshavop}{\underline{Github}} \quad
+    \href{https://keshavop.in}{\underline{Portfolio}} \quad
+\end{center}
+\vspace{-12pt}
+
+\end{document}
